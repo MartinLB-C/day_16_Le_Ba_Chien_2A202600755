@@ -1,7 +1,7 @@
 {
   "meta": {
     "dataset": "hotpot_dev_distractor_v1_100_formatted.json",
-    "mode": "mock",
+    "mode": "qwen-flash",
     "num_records": 200,
     "agents": [
       "react",
@@ -13,21 +13,21 @@
       "count": 100,
       "em": 0.78,
       "avg_attempts": 1,
-      "avg_token_estimate": 1864.24,
-      "avg_latency_ms": 602.77
+      "avg_token_estimate": 1858.88,
+      "avg_latency_ms": 483.48
     },
     "reflexion": {
       "count": 100,
       "em": 0.99,
-      "avg_attempts": 1.25,
-      "avg_token_estimate": 2520.15,
-      "avg_latency_ms": 813.27
+      "avg_attempts": 1.23,
+      "avg_token_estimate": 2458.21,
+      "avg_latency_ms": 533.57
     },
     "delta_reflexion_minus_react": {
       "em_abs": 0.21,
-      "attempts_abs": 0.25,
-      "tokens_abs": 655.91,
-      "latency_abs": 210.5
+      "attempts_abs": 0.23,
+      "tokens_abs": 599.33,
+      "latency_abs": 50.09
     }
   },
   "failure_modes": {
@@ -115,12 +115,12 @@
       "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
       "agent_type": "react",
       "gold_answer": "Eenasul Fateh",
-      "predicted_answer": "Eenasul Fateh, known by his stage name Aladin, was a former international management consultant who helped organizations improve their performance.",
+      "predicted_answer": "Eenasul Fateh",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2329
+      "token_estimate": 2325
     },
     {
       "qid": "5a87ab905542996e4f3088c1",
@@ -192,7 +192,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1979
+      "token_estimate": 1982
     },
     {
       "qid": "5ab56e32554299637185c594",
@@ -204,7 +204,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 3305
+      "token_estimate": 3316
     },
     {
       "qid": "5ab6d09255429954757d337d",
@@ -223,12 +223,12 @@
       "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
       "agent_type": "react",
       "gold_answer": "9,984",
-      "predicted_answer": "9,984",
-      "is_correct": true,
+      "predicted_answer": "331,449,281",
+      "is_correct": false,
       "attempts": 1,
-      "failure_mode": "none",
+      "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1961
+      "token_estimate": 2115
     },
     {
       "qid": "5ab3e45655429976abd1bcd4",
@@ -264,7 +264,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2190
+      "token_estimate": 2200
     },
     {
       "qid": "5a8133725542995ce29dcbdb",
@@ -300,7 +300,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1963
+      "token_estimate": 1965
     },
     {
       "qid": "5adddccd5542997dc7907069",
@@ -312,19 +312,19 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 2221
+      "token_estimate": 2222
     },
     {
       "qid": "5ae2070a5542994d89d5b313",
       "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
       "agent_type": "react",
       "gold_answer": "Badly Drawn Boy",
-      "predicted_answer": "Badly Drawn Boy",
+      "predicted_answer": "Badly Drawn Boy has a higher instrument to person ratio. \n\nExplanation: Badly Drawn Boy (Damon Gough) is a solo artist who writes, produces, and plays multiple instruments on his albums, including *The Hour of Bewilderbeast* and the *About a Boy* soundtrack. In contrast, Wolf Alice is a four-piece band with one member per primary instrument (guitar, bass, drums, vocals), resulting in a lower instrument-to-person ratio. Since Badly Drawn Boy performs multiple instruments himself, his effective instrument-to-person ratio is higher than that of Wolf Alice.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1748
+      "token_estimate": 1671
     },
     {
       "qid": "5ae22b8d554299234fd0440f",
@@ -343,12 +343,12 @@
       "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
       "agent_type": "react",
       "gold_answer": "Barton Lee Hazlewood",
-      "predicted_answer": "Lee Hazlewood",
+      "predicted_answer": "Lee Hazlewood was the writer of \"These Boots Are Made for Walkin'\" and died in 2007.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1587
+      "token_estimate": 1588
     },
     {
       "qid": "5adf37a95542995ec70e8f97",
@@ -360,19 +360,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2350
+      "token_estimate": 2330
     },
     {
       "qid": "5abd259d55429924427fcf1a",
       "question": "Are both Dictyosperma, and Huernia described as a genus?",
       "agent_type": "react",
       "gold_answer": "yes",
-      "predicted_answer": "Yes, both Dictyosperma and Huernia are described as genera.",
+      "predicted_answer": "Yes",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 737
+      "token_estimate": 727
     },
     {
       "qid": "5a828c8355429966c78a6a50",
@@ -420,7 +420,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1576
+      "token_estimate": 1575
     },
     {
       "qid": "5ae0361155429925eb1afc2c",
@@ -432,7 +432,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1769
+      "token_estimate": 1784
     },
     {
       "qid": "5abc0a5d5542993f40c73c64",
@@ -444,7 +444,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 2167
+      "token_estimate": 2185
     },
     {
       "qid": "5a7cc50e554299452d57ba3e",
@@ -487,24 +487,24 @@
       "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
       "agent_type": "react",
       "gold_answer": "World War II",
-      "predicted_answer": "World War I and World War II",
-      "is_correct": false,
+      "predicted_answer": "World War II",
+      "is_correct": true,
       "attempts": 1,
-      "failure_mode": "wrong_final_answer",
+      "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1439
+      "token_estimate": 1405
     },
     {
       "qid": "5ab51dae5542991779162d82",
       "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
       "agent_type": "react",
       "gold_answer": "no",
-      "predicted_answer": "No, only Gerald R. Ford International Airport is located in Michigan. Elko Regional Airport is located in Nevada.",
+      "predicted_answer": "No, only Gerald R. Ford International Airport is located in Michigan. Elko Regional Airport is in Nevada.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1877
+      "token_estimate": 1869
     },
     {
       "qid": "5a7571135542992d0ec05f98",
@@ -528,7 +528,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2147
+      "token_estimate": 2150
     },
     {
       "qid": "5a74106b55429979e288289e",
@@ -540,7 +540,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1592
+      "token_estimate": 1593
     },
     {
       "qid": "5a79311755429970f5fffe67",
@@ -588,7 +588,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1550
+      "token_estimate": 1552
     },
     {
       "qid": "5ab859a955429934fafe6d7b",
@@ -619,12 +619,12 @@
       "question": "Are Ferocactus and Silene both types of plant?",
       "agent_type": "react",
       "gold_answer": "yes",
-      "predicted_answer": "Yes, Ferocactus and Silene are both types of plants.",
+      "predicted_answer": "Yes",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1734
+      "token_estimate": 1729
     },
     {
       "qid": "5abbf698554299114383a0b5",
@@ -648,7 +648,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1874
+      "token_estimate": 1876
     },
     {
       "qid": "5ab84bf555429916710eb01f",
@@ -660,7 +660,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1783
+      "token_estimate": 1766
     },
     {
       "qid": "5a77724455429972597f153e",
@@ -684,19 +684,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1788
+      "token_estimate": 1841
     },
     {
       "qid": "5ab96ab755429970cfb8eacd",
       "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
       "agent_type": "react",
       "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
-      "predicted_answer": "Savan Kotecha, Ilya Salmanzadeh, Max Martin, and Tove Lo",
+      "predicted_answer": "Max Martin, Savan Kotecha, Ilya Salmanzadeh, and Tove Lo.",
       "is_correct": false,
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1991
+      "token_estimate": 1964
     },
     {
       "qid": "5a8a43eb5542996c9b8d5e82",
@@ -708,7 +708,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 2310
+      "token_estimate": 2323
     },
     {
       "qid": "5ae73acb5542991e8301cc07",
@@ -720,7 +720,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1713
+      "token_estimate": 1712
     },
     {
       "qid": "5a7320565542991f9a20c61d",
@@ -768,19 +768,19 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 2457
+      "token_estimate": 2479
     },
     {
       "qid": "5a85fb085542994775f606de",
       "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
       "agent_type": "react",
       "gold_answer": "Ronald Shusett",
-      "predicted_answer": "Steven Spielberg",
+      "predicted_answer": "Michael Finnell",
       "is_correct": false,
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1818
+      "token_estimate": 1780
     },
     {
       "qid": "5a7be2595542997c3ec972ac",
@@ -792,19 +792,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1569
+      "token_estimate": 1583
     },
     {
       "qid": "5a77152355429966f1a36c2e",
       "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
       "agent_type": "react",
       "gold_answer": "821",
-      "predicted_answer": "The Roud Folk Song Index of the nursery rhyme inspiring \"What Are Little Girls Made Of?\" is 821.",
+      "predicted_answer": "The Roud Folk Song Index number of the nursery rhyme \"What Are Little Boys Made Of?\" is 821.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1252
+      "token_estimate": 1260
     },
     {
       "qid": "5a8f4c8d554299458435d5a3",
@@ -852,7 +852,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 3471
+      "token_estimate": 2709
     },
     {
       "qid": "5ac2acff55429921a00ab02b",
@@ -864,7 +864,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1871
+      "token_estimate": 1873
     },
     {
       "qid": "5aba7cfe554299232ef4a2fd",
@@ -876,7 +876,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1711
+      "token_estimate": 1717
     },
     {
       "qid": "5ae5aba0554299546bf82f17",
@@ -888,19 +888,19 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1877
+      "token_estimate": 1874
     },
     {
       "qid": "5ae1f4cb554299234fd0436d",
       "question": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
       "agent_type": "react",
       "gold_answer": "276,170 inhabitants",
-      "predicted_answer": "The inhabitant of Strasbourg, the city where the 122nd SS-Standarte was formed, is referred to as a \"Strasbourgeoise\" (for females) or \"Strasbourgeois\" (for males). In 2014, the city proper had 276,170 inhabitants.",
+      "predicted_answer": "The inhabitant of Strasbourg, the city where the 122nd SS-Standarte was formed, in 2014 was approximately 276,170 people in the city proper, and 484,157 in the Greater Strasbourg area (Eurom\u00e9tropole de Strasbourg).",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1669
+      "token_estimate": 1685
     },
     {
       "qid": "5ae7e1fc55429952e35ea9cc",
@@ -948,7 +948,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1283
+      "token_estimate": 1253
     },
     {
       "qid": "5a8979f4554299669944a52e",
@@ -972,7 +972,7 @@
       "attempts": 1,
       "failure_mode": "wrong_final_answer",
       "reflection_count": 0,
-      "token_estimate": 1960
+      "token_estimate": 1956
     },
     {
       "qid": "5a78bd9b554299078472774a",
@@ -1080,7 +1080,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1527
+      "token_estimate": 1508
     },
     {
       "qid": "5a7759fc5542993569682d60",
@@ -1111,12 +1111,12 @@
       "question": "What occupation do Chris Menges and Aram Avakian share?",
       "agent_type": "react",
       "gold_answer": "director",
-      "predicted_answer": "Director",
+      "predicted_answer": "film director",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1259
+      "token_estimate": 1372
     },
     {
       "qid": "5abfb3425542990832d3a1c0",
@@ -1140,7 +1140,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1224
+      "token_estimate": 1221
     },
     {
       "qid": "5ae53b545542990ba0bbb23c",
@@ -1171,12 +1171,12 @@
       "question": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
       "agent_type": "react",
       "gold_answer": "March and April",
-      "predicted_answer": "March or April",
+      "predicted_answer": "March and April",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1490
+      "token_estimate": 1496
     },
     {
       "qid": "5a80b3a9554299485f5986cc",
@@ -1219,24 +1219,24 @@
       "question": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
       "agent_type": "react",
       "gold_answer": "Beijing",
-      "predicted_answer": "Beijing",
+      "predicted_answer": "The ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China is based in Beijing.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1540
+      "token_estimate": 1582
     },
     {
       "qid": "5a84c4135542994c784dda31",
       "question": "Are Yingkou and Fuding the same level of city?",
       "agent_type": "react",
       "gold_answer": "no",
-      "predicted_answer": "No, Yingkou and Fuding are not the same level of city. Yingkou is a prefecture-level city in Liaoning Province, while Fuding is a county-level city under the jurisdiction of Ningde Prefecture-level City in Fujian Province.",
+      "predicted_answer": "No, Yingkou and Fuding are not the same level of city. Yingkou is a prefecture-level city in Liaoning Province, while Fuding is a county-level city within Ningde Prefecture, Fujian Province.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1125
+      "token_estimate": 1134
     },
     {
       "qid": "5a8b57f25542995d1e6f1371",
@@ -1267,24 +1267,24 @@
       "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
       "agent_type": "reflexion",
       "gold_answer": "Animorphs",
-      "predicted_answer": "The Animorphs series",
+      "predicted_answer": "Animorphs",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1957
+      "token_estimate": 1942
     },
     {
       "qid": "5adbf0a255429947ff17385a",
       "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
       "agent_type": "reflexion",
       "gold_answer": "no",
-      "predicted_answer": "No, the Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque is in the Laleli district of Fatih, Istanbul, while the Esma Sultan Mansion is located in the Ortak\u00f6y neighborhood on the Bosphorus in Istanbul.",
+      "predicted_answer": "No, the Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque is in the Laleli district of Fatih, Istanbul, while the Esma Sultan Mansion is located in Ortak\u00f6y on the Bosphorus in Istanbul.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1507
+      "token_estimate": 1503
     },
     {
       "qid": "5a8e3ea95542995a26add48d",
@@ -1315,12 +1315,12 @@
       "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
       "agent_type": "reflexion",
       "gold_answer": "Eenasul Fateh",
-      "predicted_answer": "Eenasul Fateh",
+      "predicted_answer": "Eenasul Fateh, known by his stage name Aladin, was a former international management consultant who helped organizations improve their performance.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2324
+      "token_estimate": 2329
     },
     {
       "qid": "5a87ab905542996e4f3088c1",
@@ -1332,7 +1332,7 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 7369
+      "token_estimate": 7364
     },
     {
       "qid": "5a7bbb64554299042af8f7cc",
@@ -1380,7 +1380,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1745
+      "token_estimate": 1744
     },
     {
       "qid": "5ab3b0bf5542992ade7c6e39",
@@ -1392,19 +1392,19 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 4518
+      "token_estimate": 4508
     },
     {
       "qid": "5ab56e32554299637185c594",
       "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
       "agent_type": "reflexion",
       "gold_answer": "no",
-      "predicted_answer": "Yes",
-      "is_correct": false,
-      "attempts": 3,
-      "failure_mode": "wrong_final_answer",
-      "reflection_count": 2,
-      "token_estimate": 11374
+      "predicted_answer": "no",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1,
+      "token_estimate": 6949
     },
     {
       "qid": "5ab6d09255429954757d337d",
@@ -1416,7 +1416,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1405
+      "token_estimate": 1403
     },
     {
       "qid": "5a75e05c55429976ec32bc5f",
@@ -1440,7 +1440,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1834
+      "token_estimate": 1825
     },
     {
       "qid": "5ab29c24554299449642c932",
@@ -1464,7 +1464,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2199
+      "token_estimate": 2200
     },
     {
       "qid": "5a8133725542995ce29dcbdb",
@@ -1476,7 +1476,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1380
+      "token_estimate": 1387
     },
     {
       "qid": "5ae7a8175542993210983ed8",
@@ -1488,7 +1488,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1864
+      "token_estimate": 1759
     },
     {
       "qid": "5ae6050f55429929b0807a5e",
@@ -1500,7 +1500,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1963
+      "token_estimate": 1965
     },
     {
       "qid": "5adddccd5542997dc7907069",
@@ -1512,19 +1512,19 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 4887
+      "token_estimate": 4927
     },
     {
       "qid": "5ae2070a5542994d89d5b313",
       "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
       "agent_type": "reflexion",
       "gold_answer": "Badly Drawn Boy",
-      "predicted_answer": "Badly Drawn Boy",
+      "predicted_answer": "Badly Drawn Boy has a higher instrument to person ratio.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1695
+      "token_estimate": 1806
     },
     {
       "qid": "5ae22b8d554299234fd0440f",
@@ -1543,12 +1543,12 @@
       "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
       "agent_type": "reflexion",
       "gold_answer": "Barton Lee Hazlewood",
-      "predicted_answer": "Lee Hazlewood",
+      "predicted_answer": "Lee Hazlewood was the writer of \"These Boots Are Made for Walkin'\" and he died in 2007.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1587
+      "token_estimate": 1590
     },
     {
       "qid": "5adf37a95542995ec70e8f97",
@@ -1560,7 +1560,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2355
+      "token_estimate": 2330
     },
     {
       "qid": "5abd259d55429924427fcf1a",
@@ -1579,12 +1579,12 @@
       "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
       "agent_type": "reflexion",
       "gold_answer": "Henry J. Kaiser",
-      "predicted_answer": "Henry J. Kaiser",
+      "predicted_answer": "Yes, Kaiser Ventures corporation was founded by Henry J. Kaiser, an American industrialist who became known as the father of modern American shipbuilding.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1631
+      "token_estimate": 1677
     },
     {
       "qid": "5a8a3e745542996c9b8d5e70",
@@ -1608,43 +1608,43 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 4357
+      "token_estimate": 4359
     },
     {
       "qid": "5ae4a3265542995ad6573de5",
       "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
       "agent_type": "reflexion",
       "gold_answer": "Fujioka, Gunma",
-      "predicted_answer": "Buck-Tick hails from Fujioka, Gunma, Japan.",
+      "predicted_answer": "Japan",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1575
+      "token_estimate": 1581
     },
     {
       "qid": "5ae0361155429925eb1afc2c",
       "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
       "agent_type": "reflexion",
       "gold_answer": "Charles Eug\u00e8ne",
-      "predicted_answer": "Charles Nungesser",
-      "is_correct": true,
-      "attempts": 2,
-      "failure_mode": "none",
-      "reflection_count": 1,
-      "token_estimate": 4104
+      "predicted_answer": "Charles Nungesser and Fran\u00e7ois Coli flew L'Oiseau Blanc.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2,
+      "token_estimate": 6777
     },
     {
       "qid": "5abc0a5d5542993f40c73c64",
       "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
       "agent_type": "reflexion",
       "gold_answer": "no",
-      "predicted_answer": "No, neither Freakonomics nor In the Realm of the Hackers is an American documentary. Freakonomics is a book, and the film adaptation, \"Freakonomics: The Movie,\" while American, is not the same as the original work. In the Realm of the Hackers is a 2003 Australian documentary, not American.",
+      "predicted_answer": "No",
       "is_correct": true,
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 5142
+      "token_estimate": 4939
     },
     {
       "qid": "5a7cc50e554299452d57ba3e",
@@ -1656,19 +1656,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2022
+      "token_estimate": 2021
     },
     {
       "qid": "5abf63f15542997ec76fd3ea",
       "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
       "agent_type": "reflexion",
       "gold_answer": "October 1922",
-      "predicted_answer": "The Russian Civil War ended in October 1922.",
+      "predicted_answer": "October 1922",
       "is_correct": true,
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 5379
+      "token_estimate": 5368
     },
     {
       "qid": "5a8ef2a75542995a26add583",
@@ -1699,7 +1699,7 @@
       "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
       "agent_type": "reflexion",
       "gold_answer": "no",
-      "predicted_answer": "No, only Gerald R. Ford International Airport is located in Michigan. Elko Regional Airport is located in Nevada.",
+      "predicted_answer": "No, only Gerald R. Ford International Airport is located in Michigan. Elko Regional Airport is in Nevada.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
@@ -1728,7 +1728,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2150
+      "token_estimate": 2080
     },
     {
       "qid": "5a74106b55429979e288289e",
@@ -1740,7 +1740,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1592
+      "token_estimate": 1620
     },
     {
       "qid": "5a79311755429970f5fffe67",
@@ -1785,10 +1785,10 @@
       "gold_answer": "Yellowcraig",
       "predicted_answer": "Yellowcraig",
       "is_correct": true,
-      "attempts": 3,
+      "attempts": 2,
       "failure_mode": "none",
-      "reflection_count": 2,
-      "token_estimate": 5705
+      "reflection_count": 1,
+      "token_estimate": 3567
     },
     {
       "qid": "5ab859a955429934fafe6d7b",
@@ -1800,31 +1800,31 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2955
+      "token_estimate": 2936
     },
     {
       "qid": "5add61d65542995b365fab21",
       "question": "What type of forum did a former Soviet statesman initiate?",
       "agent_type": "reflexion",
       "gold_answer": "Organizations could come together to address global issues",
-      "predicted_answer": "An international forum for organizations to address global issues.",
+      "predicted_answer": "Mikhail Gorbachev initiated a global forum for dialogue on peace and human well-being, bringing together Nobel Peace Laureates to address pressing international issues.",
       "is_correct": true,
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 5585
+      "token_estimate": 5835
     },
     {
       "qid": "5a8e068b5542995085b37384",
       "question": "Are Ferocactus and Silene both types of plant?",
       "agent_type": "reflexion",
       "gold_answer": "yes",
-      "predicted_answer": "Yes, Ferocactus and Silene are both types of plants.",
+      "predicted_answer": "Yes",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1734
+      "token_estimate": 1729
     },
     {
       "qid": "5abbf698554299114383a0b5",
@@ -1848,7 +1848,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1866
+      "token_estimate": 1874
     },
     {
       "qid": "5ab84bf555429916710eb01f",
@@ -1860,7 +1860,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1766
+      "token_estimate": 1771
     },
     {
       "qid": "5a77724455429972597f153e",
@@ -1884,19 +1884,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1841
+      "token_estimate": 1812
     },
     {
       "qid": "5ab96ab755429970cfb8eacd",
       "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
       "agent_type": "reflexion",
       "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
-      "predicted_answer": "Ellie Goulding worked with Max Martin, Savan Kotecha, and Ilya Salmanzadeh on her third studio album, Delirium.",
+      "predicted_answer": "Ellie Goulding worked with Max Martin, Savan Kotecha, and Ilya Salmanzadeh as writers on her third studio album, Delirium.",
       "is_correct": true,
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 4265
+      "token_estimate": 4291
     },
     {
       "qid": "5a8a43eb5542996c9b8d5e82",
@@ -1908,7 +1908,7 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 5161
+      "token_estimate": 5119
     },
     {
       "qid": "5ae73acb5542991e8301cc07",
@@ -1932,7 +1932,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1972
+      "token_estimate": 1968
     },
     {
       "qid": "5ae32e125542991a06ce9946",
@@ -1944,31 +1944,31 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1923
+      "token_estimate": 1911
     },
     {
       "qid": "5adc53f75542996e6852530a",
       "question": "Are both Cypress and Ajuga genera?",
       "agent_type": "reflexion",
       "gold_answer": "no",
-      "predicted_answer": "Yes, Ajuga is a genus; no, Cypress is not a genus.",
+      "predicted_answer": "Yes, Ajuga is a genus; Cypress is not a genus but a common name for trees in the genus Cupressus and related genera.",
       "is_correct": true,
       "attempts": 3,
       "failure_mode": "none",
       "reflection_count": 2,
-      "token_estimate": 5920
+      "token_estimate": 5808
     },
     {
       "qid": "5a8b20335542996c9b8d5fb3",
       "question": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
       "agent_type": "reflexion",
       "gold_answer": "shortest player ever to play in the National Basketball Association",
-      "predicted_answer": "The distinction held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting is that he is the shortest player ever to play in the NBA.",
+      "predicted_answer": "The distinction held by the former NBA player who was a member of the Charlotte Hornets during their 1992\u201393 season and later served as head coach for the WNBA's Charlotte Sting is that he was the shortest player ever to play in the NBA.",
       "is_correct": true,
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 5411
+      "token_estimate": 5517
     },
     {
       "qid": "5a85fb085542994775f606de",
@@ -1980,7 +1980,7 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 4084
+      "token_estimate": 4148
     },
     {
       "qid": "5a7be2595542997c3ec972ac",
@@ -1992,7 +1992,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1580
+      "token_estimate": 1583
     },
     {
       "qid": "5a77152355429966f1a36c2e",
@@ -2004,19 +2004,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1260
+      "token_estimate": 1253
     },
     {
       "qid": "5a8f4c8d554299458435d5a3",
       "question": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
       "agent_type": "reflexion",
       "gold_answer": "more than 70 countries",
-      "predicted_answer": "more than 70",
+      "predicted_answer": "more than 70 countries",
       "is_correct": true,
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 3593
+      "token_estimate": 3662
     },
     {
       "qid": "5a80840f554299485f59863b",
@@ -2052,19 +2052,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 2709
+      "token_estimate": 2491
     },
     {
       "qid": "5ac2acff55429921a00ab02b",
       "question": "who is the younger brother of The episode guest stars of The Hard Easy ",
       "agent_type": "reflexion",
       "gold_answer": "Bill Murray",
-      "predicted_answer": "Bill Murray is the younger brother of the guest stars in \"The Hard Easy.\"",
+      "predicted_answer": "Bill Murray",
       "is_correct": true,
-      "attempts": 3,
+      "attempts": 2,
       "failure_mode": "none",
-      "reflection_count": 2,
-      "token_estimate": 6733
+      "reflection_count": 1,
+      "token_estimate": 4371
     },
     {
       "qid": "5aba7cfe554299232ef4a2fd",
@@ -2076,7 +2076,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1711
+      "token_estimate": 1717
     },
     {
       "qid": "5ae5aba0554299546bf82f17",
@@ -2088,19 +2088,19 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 4423
+      "token_estimate": 4369
     },
     {
       "qid": "5ae1f4cb554299234fd0436d",
       "question": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
       "agent_type": "reflexion",
       "gold_answer": "276,170 inhabitants",
-      "predicted_answer": "The inhabitant of Strasbourg, the city where the 122nd SS-Standarte was formed, is referred to as a \"Strasbourgeoise\" (for females) or \"Strasbourgeois\" (for males). In 2014, the city proper had 276,170 inhabitants.",
+      "predicted_answer": "The inhabitant of Strasbourg, the city where the 122nd SS-Standarte was formed, in 2014 was approximately 276,170 people in the city proper, and 484,157 in the Greater Strasbourg area (Eurom\u00e9tropole de Strasbourg).",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1660
+      "token_estimate": 1685
     },
     {
       "qid": "5ae7e1fc55429952e35ea9cc",
@@ -2155,12 +2155,12 @@
       "question": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
       "agent_type": "reflexion",
       "gold_answer": "Ann",
-      "predicted_answer": "Ann",
+      "predicted_answer": "The actress who plays Bobbi Bacha in *Suburban Madness* is Sela Ward. According to the context, her full name is Sela Ann Ward. Therefore, her middle name is **Ann**.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1460
+      "token_estimate": 1508
     },
     {
       "qid": "5a713ea95542994082a3e6e4",
@@ -2172,7 +2172,7 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 4387
+      "token_estimate": 4377
     },
     {
       "qid": "5a78bd9b554299078472774a",
@@ -2196,7 +2196,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1618
+      "token_estimate": 1620
     },
     {
       "qid": "5ae2dd2055429928c423950d",
@@ -2220,7 +2220,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1831
+      "token_estimate": 1843
     },
     {
       "qid": "5a88658955429938390d3f47",
@@ -2280,7 +2280,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1527
+      "token_estimate": 1508
     },
     {
       "qid": "5a7759fc5542993569682d60",
@@ -2299,24 +2299,24 @@
       "question": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
       "agent_type": "reflexion",
       "gold_answer": "250 million",
-      "predicted_answer": "250 million copies of Roald Dahl's variation on a popular anecdote, specifically \"Mrs. Bixby and the Colonel's Coat,\" sold as part of his overall book sales, which total over 250 million copies worldwide.",
+      "predicted_answer": "250 million copies",
       "is_correct": true,
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 3162
+      "token_estimate": 3072
     },
     {
       "qid": "5aba749055429901930fa7d8",
       "question": "What occupation do Chris Menges and Aram Avakian share?",
       "agent_type": "reflexion",
       "gold_answer": "director",
-      "predicted_answer": "Film director",
+      "predicted_answer": "film director",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1206
+      "token_estimate": 1382
     },
     {
       "qid": "5abfb3425542990832d3a1c0",
@@ -2340,7 +2340,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1224
+      "token_estimate": 1221
     },
     {
       "qid": "5ae53b545542990ba0bbb23c",
@@ -2352,7 +2352,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1266
+      "token_estimate": 1267
     },
     {
       "qid": "5ae224da554299234fd043ee",
@@ -2412,31 +2412,31 @@
       "attempts": 2,
       "failure_mode": "none",
       "reflection_count": 1,
-      "token_estimate": 5348
+      "token_estimate": 5449
     },
     {
       "qid": "5adccd795542990d50227d2c",
       "question": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
       "agent_type": "reflexion",
       "gold_answer": "Beijing",
-      "predicted_answer": "The ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China is based in Beijing.",
+      "predicted_answer": "Beijing",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1582
+      "token_estimate": 1540
     },
     {
       "qid": "5a84c4135542994c784dda31",
       "question": "Are Yingkou and Fuding the same level of city?",
       "agent_type": "reflexion",
       "gold_answer": "no",
-      "predicted_answer": "No, Yingkou and Fuding are not the same level of city. Yingkou is a prefecture-level city in Liaoning Province, while Fuding is a county-level city under the jurisdiction of Ningde Prefecture-level City in Fujian Province.",
+      "predicted_answer": "No, Yingkou and Fuding are not the same level of city. Yingkou is a prefecture-level city in Liaoning Province, while Fuding is a county-level city in Fujian Province.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 1125
+      "token_estimate": 1157
     }
   ],
   "extensions": [

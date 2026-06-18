@@ -10,7 +10,7 @@ load_dotenv()
 
 client = OpenAI(
     api_key=os.getenv("DASHSCOPE_API_KEY", ""), 
-    base_url="https://ws-7z0pgh6qqcnccram.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1"
+    base_url=os.getenv("BASE_URL", "")
 )
 
 FAILURE_MODE_BY_QID = {}
@@ -19,7 +19,7 @@ def call_llm(messages, temperature=0.0):
     start_time = time.time()
     try:
         response = client.chat.completions.create(
-            model="qwen-flash",
+            model="qwen-flash-2025-07-28",
             messages=messages,
             temperature=temperature
         )

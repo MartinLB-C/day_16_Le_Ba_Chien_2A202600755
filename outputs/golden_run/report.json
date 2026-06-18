@@ -1,7 +1,7 @@
 {
   "meta": {
     "dataset": "hotpot_golden.json",
-    "mode": "mock",
+    "mode": "qwen-flash",
     "num_records": 40,
     "agents": [
       "react",
@@ -13,21 +13,21 @@
       "count": 20,
       "em": 1.0,
       "avg_attempts": 1,
-      "avg_token_estimate": 426.5,
-      "avg_latency_ms": 339.8
+      "avg_token_estimate": 425.7,
+      "avg_latency_ms": 321.25
     },
     "reflexion": {
       "count": 20,
       "em": 1.0,
       "avg_attempts": 1,
-      "avg_token_estimate": 425.75,
-      "avg_latency_ms": 350.15
+      "avg_token_estimate": 425.9,
+      "avg_latency_ms": 288.15
     },
     "delta_reflexion_minus_react": {
       "em_abs": 0.0,
       "attempts_abs": 0,
-      "tokens_abs": -0.75,
-      "latency_abs": 10.35
+      "tokens_abs": 0.2,
+      "latency_abs": -33.1
     }
   },
   "failure_modes": {
@@ -96,7 +96,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 406
+      "token_estimate": 403
     },
     {
       "qid": "gold6",
@@ -156,7 +156,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 433
+      "token_estimate": 441
     },
     {
       "qid": "gold11",
@@ -180,7 +180,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 436
+      "token_estimate": 427
     },
     {
       "qid": "gold13",
@@ -235,12 +235,12 @@
       "question": "What is the deepest point in the ocean that borders Japan to the east?",
       "agent_type": "react",
       "gold_answer": "Challenger Deep",
-      "predicted_answer": "The deepest point in the ocean that borders Japan to the east is the Challenger Deep in the Mariana Trench, which reaches approximately 10,935 metres.",
+      "predicted_answer": "The deepest point in the ocean that borders Japan to the east is the Challenger Deep in the Mariana Trench, at approximately 10,935 metres.",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 498
+      "token_estimate": 484
     },
     {
       "qid": "gold18",
@@ -252,7 +252,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 430
+      "token_estimate": 429
     },
     {
       "qid": "gold19",
@@ -276,7 +276,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 466
+      "token_estimate": 469
     },
     {
       "qid": "gold1",
@@ -336,19 +336,19 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 403
+      "token_estimate": 406
     },
     {
       "qid": "gold6",
       "question": "What is the official language of the country that borders France to the northeast and has Brussels as its capital?",
       "agent_type": "reflexion",
       "gold_answer": "Dutch, French, and German",
-      "predicted_answer": "The official languages of Belgium are Dutch, French, and German.",
+      "predicted_answer": "Dutch, French, and German",
       "is_correct": true,
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 456
+      "token_estimate": 449
     },
     {
       "qid": "gold7",
@@ -360,7 +360,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 558
+      "token_estimate": 557
     },
     {
       "qid": "gold8",
@@ -396,7 +396,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 433
+      "token_estimate": 441
     },
     {
       "qid": "gold11",
@@ -456,7 +456,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 413
+      "token_estimate": 412
     },
     {
       "qid": "gold16",
@@ -492,7 +492,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 430
+      "token_estimate": 429
     },
     {
       "qid": "gold19",
@@ -516,7 +516,7 @@
       "attempts": 1,
       "failure_mode": "none",
       "reflection_count": 0,
-      "token_estimate": 466
+      "token_estimate": 468
     }
   ],
   "extensions": [
